@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <h1>Password Generator</h1>
+            <div class="gene">
+                <p class="nshow">CLICK GENERATE</p>
+                <p class="show">password</p>
+                <span class="icon"><i class="fa fa-clone" style="font-size:15px"></i></span>
+                <span class="copy"></span>
+            </div>
+            <p class="length">LENGTH: <span class="len">4</span></p>
+            <div class="range">
+                <span class="padi">4</span>
+                <input type="range" min="4" max="20" id="rang">
+                <span class="padi">20</span>
+            </div>
+            <p class="length">SETTINGS</p>
+            <div class="upper common">
+                <p>Include Uppercase</p>
+                <input type="checkbox" name="on" id="up">
+                <label class="what" for="up"><div class="up1"></div></label>
+            </div>
+            <div class="lower common">
+                <p>Include Lowercase</p>
+                <input type="checkbox" name="on" id="lo">
+                <label class="what" for="lo">
+                    <div class="lo1"></div>
+                </label>
+            </div>
+            <div class="number common">
+                <p>Include Numbers</p>
+            <input type="checkbox" name="on" id="num">
+            <label class="what" for="num">
+                <div class="num1"></div>
+            </label>
+            </div>
+            <div class="symbols common">
+                <p>Include Symbols</p>
+                <input type="checkbox" name="on" id="sym">
+                <label class="what" for="sym">
+                    <div class="sym1"></div>
+                </label>
+            </div>
+            <div class="pswd" id="generatepswd">
+                GENERATE PASSWORD
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
